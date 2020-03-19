@@ -5,7 +5,7 @@ import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
 
 const IndexPage = () => (
-  <Layout pageTitle="Code Blogs">
+  <Layout pageTitle="Bit Blogs">
     <SEO title="Home" />
     <StaticQuery
       query={indexQuery}
@@ -33,7 +33,10 @@ const IndexPage = () => (
 
 const indexQuery = graphql`
   {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2
+    ) {
       edges {
         node {
           id
