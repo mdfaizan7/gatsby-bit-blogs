@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
+import PaginationLinks from "../components/PaginationLinks"
 
 const IndexPage = () => (
   <Layout pageTitle="Bit Blogs">
@@ -24,6 +25,14 @@ const IndexPage = () => (
                 tags={node.frontmatter.tags}
               />
             ))}
+            <PaginationLinks
+              currentPage={1}
+              numberOfPages={Math.ceil(
+                data.allMarkdownRemark
+                  .totalCount /* <= total number of posts */ /
+                  2 /* <= posts per page */
+              )}
+            />
           </div>
         )
       }}
@@ -37,6 +46,7 @@ const indexQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 2
     ) {
+      totalCount
       edges {
         node {
           id
