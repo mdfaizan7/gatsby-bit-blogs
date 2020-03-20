@@ -42,8 +42,6 @@ This is the complete code for my app Bit Blogs, which is a blog website
 
 ## 💫 Deployed Instance
 
-    ```shell
     https://peaceful-montalcini-173481.netlify.com/
-    ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
