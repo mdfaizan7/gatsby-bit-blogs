@@ -8,7 +8,7 @@
   Gatsby- Bit Blogs App
 </h1>
 
-This is the complete code for my app Bit Blogs, which is a sample blog website
+This is the complete code for my app Bit Blogs, which is a blog website
 
 ## 🚀 Quick start
 
@@ -25,7 +25,7 @@ This is the complete code for my app Bit Blogs, which is a sample blog website
     npm install --save
     ```
 
-    if you are using yarn..
+    if you are using yarn...
 
     ```shell
     cd bit_blogs
@@ -34,12 +34,16 @@ This is the complete code for my app Bit Blogs, which is a sample blog website
 
 3)  **Launch Project 🚀**
 
-```shell
+    ```shell
     gatsby develop
-```
+    ```
 
     Your site is now running at `http://localhost:8000`!
 
 ## 💫 Deployed Instance
+
+    ```shell
+    https://peaceful-montalcini-173481.netlify.com/
+    ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
